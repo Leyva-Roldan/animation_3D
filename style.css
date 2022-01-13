@@ -1,0 +1,152 @@
+body {
+    background-color: black;
+    background-image:url('https://smd-prod.s3.amazonaws.com/science-red/s3fs-public/atoms/files/westlake1_0.jpg');
+    background-clip: contain;
+    background-repeat: no-repeat;
+}
+div.container-div {
+    position: relative;
+    vertical-align: middle;
+    height: 190px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    perspective: 100px;
+    -webkit-perspective: 100px;
+}
+div.spinning-div {
+    color: #DDDDDD;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(99,99,99,0.4);
+    padding: 60px;
+    position: absolute;
+    background: rgba(99,99,99,0.2);
+    border-top: 1px solid white;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    box-shadow:2px 2px 30px #888888;
+    animation-name: giro;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes giro {
+    from { transform: rotateX(0deg);}
+    50% {
+        transform: rotateX(180deg);
+        box-shadow: 2px -2px 30px #888888;
+       text-shadow: 2px -2px 3px rgba(99,99,99,0.4);
+       border-bottom: 1px solid white;
+       border-left:1px solid #EEEEEE;
+       border-top:1px solid #CCCCCC;
+       border-right: 1px solid #CCCCCC;
+    }
+    to {
+        transform: rotateX(369deg);
+    }
+}
+/* caja 2 */ 
+div.container-div2 {
+    position: relative;
+    vertical-align: middle;
+    height: 190px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    perspective: 100px;
+    -webkit-perspective: 90px;
+}
+div.spinning-div2 {
+    color: #DDDDDD;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(99,99,99,0.4);
+    padding: 60px;
+    position: absolute;
+    background: rgba(99,99,99,0.2);
+    border-top: 1px solid white;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    box-shadow:2px 2px 30px #888888;
+    animation-name: giro2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes giro2 {
+    from { transform: rotateX(0deg);}
+    40% {
+        transform: rotateY(50deg);
+        box-shadow: 2px -2px 30px #888888;
+       text-shadow: 2px -2px 3px rgba(99,99,99,0.4);
+       border-bottom: 1px solid green;
+       border-left:1px solid blue;
+       border-top:1px solid #CCCCCC;
+       border-right: 1px solid red;
+    }
+    50% {
+        transform: rotateY(50deg);
+        box-shadow: 2px -2px 30px #888888;
+       text-shadow: 2px -2px 3px rgba(99,99,99,0.4);
+       border-bottom: 1px solid white;
+       border-left:1px solid blue;
+       border-top:1px solid #CCCCCC;
+       border-right: 1px solid #CCCCCC;
+    }
+    to {
+        transform: rotateX(369deg);
+    }
+}
+/** 3 caja */ 
+div.container-div3 {
+    position: relative;
+    vertical-align: middle;
+    height: 190px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    perspective: 100px;
+    -webkit-perspective: 90px;
+}
+div.spinning-div3 {
+    color: #DDDDDD;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(99,99,99,0.4);
+    padding: 60px;
+    position: absolute;
+    background: rgba(99,99,99,0.2);
+    border-top: 1px solid white;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    box-shadow:2px 2px 30px #888888;
+    animation-name: giro3;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes giro3 {
+    from { transform: rotateX(0deg);}
+    40% {
+        transform: rotateY(-50deg);
+        box-shadow: 2px -2px 30px #888888;
+       text-shadow: 2px -2px 3px rgba(99,99,99,0.4);
+       border-bottom: 1px solid green;
+       border-left:1px solid blue;
+       border-top:1px solid #CCCCCC;
+       border-right: 1px solid red;
+    }
+    50% {
+        transform: rotateY(-50deg);
+        box-shadow: 2px -2px 30px #888888;
+       text-shadow: 2px -2px 3px rgba(99,99,99,0.4);
+       border-bottom: 1px solid white;
+       border-left:1px solid blue;
+       border-top:1px solid #CCCCCC;
+       border-right: 1px solid #CCCCCC;
+    }
+    to {
+        transform: rotateX(369deg);
+    }
+}
